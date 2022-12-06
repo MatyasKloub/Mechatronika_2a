@@ -28,12 +28,12 @@ void text2_thread()
 
 int main()
 {    
-    thread1.start(text1_thread());
+    thread1.start(text1_thread);
     thread1.join();
     lcd.Clear(BARVA3);
     ThisThread::sleep_for(1s);
 
-    thread2.start(text2_thread());
+    thread2.start(text2_thread);
     thread2.join();
     lcd.Clear(BARVA3);
     ThisThread::sleep_for(2s);
